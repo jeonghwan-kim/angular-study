@@ -8,10 +8,8 @@
  * Controller of the angularStudyApp
  */
 angular.module('angularStudyApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, foo) {
+
+      $scope.name = foo.name;
+
   });
